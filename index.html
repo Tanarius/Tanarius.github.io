@@ -96,7 +96,7 @@
     position:relative;overflow:hidden;
   }
   .proj:hover{border-color:var(--line-bright);transform:translateY(-2px)}
-  .proj-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+  .proj-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:6px}
   .proj-name{font-family:var(--display);font-size:1.55rem;font-weight:600;letter-spacing:-0.01em}
   .proj-kind{font-family:var(--mono);font-size:12px;color:var(--ink-dim)}
   .badge{
@@ -174,8 +174,8 @@
 
 <header class="hero wrap">
   <div class="eyebrow">IT Systems Administrator · Microsoft 365, Entra ID, PowerShell</div>
-  <h1>I run Microsoft 365 tenants.<br>I build AI tools that help.</h1>
-  <p class="lead">I support 200 to 400 users across multiple Microsoft 365 and Entra ID environments at an MSP. I also build AI agents and automation, with the same caution I use for admin access: <strong>least privilege, audit logs, and nothing that can quietly break a tenant.</strong></p>
+  <h1>I run M365 tenants.<br>I build AI tools that help.</h1>
+  <p class="lead">I support 200 to 400 users across multiple Microsoft 365 and Entra ID environments at an MSP. I also build AI agents and automation, with the same caution I use for admin access: <strong>least privilege and audit logs</strong>, and nothing that can quietly break a tenant.</p>
   <div class="hero-cta">
     <a href="#projects" class="btn primary">View the work ↓</a>
     <a href="https://github.com/Tanarius" class="btn" target="_blank" rel="noopener">GitHub</a>
@@ -192,9 +192,8 @@
     <div class="proj-head">
       <div>
         <span class="proj-name">M365 Admin MCP Server</span>
-        <span class="proj-kind"> · AI access to admin data, done safely</span>
       </div>
-      <span class="badge live">● Verified on a live test tenant</span>
+      <span class="badge live">● Tested on a live tenant</span>
     </div>
     <div class="proj-tag">Lets Claude answer Microsoft 365 and Entra admin questions in plain English</div>
     <p class="proj-body">At an MSP, checking MFA gaps and stale accounts is tedious. This MCP server lets Claude answer those questions through Microsoft Graph, <span class="why">without giving the AI any way to change the tenant.</span></p>
